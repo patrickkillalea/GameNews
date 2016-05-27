@@ -1,19 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-  </body>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
 
-  <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
-  </script>
+<body>
+    <div class="hidden-xs" style="background-color: rgba(128,128,128,0.3);height:80px;width:100%;box-shadow: 2px 2px 1px rgb(128,128,128);">
+        <img src="http://findicons.com/files/icons/770/token_dark/256/games.png" height="80px" width="80px" />
+        <a href="#"><h3 style="color:white;display:inline;margin-left:30px;">Link 1</h3></a>
+        <a href="#"><h3 style="color:white;display:inline;margin-left:30px;">Link 2</h3></a>
+        <a href="#"><h3 style="color:white;display:inline;margin-left:30px;">Link 3</h3></a>
+        <a href="#"><h3 style="color:white;display:inline;margin-left:30px;">Link 4</h3></a>
+    </div>
+    <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0px;">
+        <div style="background-color:black;height:400px;width:100%;opacity: 0.6;">
+        </div>
+    </div>
+    <div class="col-md-10 col-sm-10 col-xs-10">
+        <div style="color:white;">
+            <h1>Hello World!</h1>
+            <!-- All of the Node.js APIs are available in this renderer process. -->
+            We are using node
+            <script>
+            document.write(process.versions.node)
+            </script>, Chromium
+            <script>
+            document.write(process.versions.chrome)
+            </script>, and Electron
+            <script>
+            document.write(process.versions.electron)
+            </script>.
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js" />
+</body>
+<script>
+// You can also require other files to run in this process
+require('./renderer.js')
+</script>
+
 </html>
+<style type="text/css">
+body {
+    background: url('http://static.comicvine.com/uploads/original/7/78486/3303618-7304635142-illid.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    border: white solid 1px;
+}
+
+a:active {
+    text-decoration: none;
+}
+</style>
+<!-- <script type="text/javascript">
+  var mainimage = "http://static.comicvine.com/uploads/original/7/78486/3303618-7304635142-illid.jpg";
+</script> -->
