@@ -1,0 +1,201 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'electron-packager',
+1 verbose cli   '-g' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.4
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'electron-packager', null ]
+7 verbose cache add spec electron-packager
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'electron-packager',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'electron-packager',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed electron-packager@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for electron-packager
+11 info addNameTag [ 'electron-packager', 'latest' ]
+12 silly mapToRegistry name electron-packager
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'electron-packager',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'electron-packager',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/electron-packager
+17 verbose addNameTag registry:https://registry.npmjs.org/electron-packager not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/electron-packager
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 12:02:13 PM
+21 verbose request using bearer token for auth
+22 verbose request id 972057e97abc31e9
+23 verbose etag "BM51R3LZENCX1FGQQ47CTPMSY"
+24 http request GET https://registry.npmjs.org/electron-packager
+25 http 304 https://registry.npmjs.org/electron-packager
+26 verbose headers { 'cache-control': 'max-age=300',
+26 verbose headers   'accept-ranges': 'bytes',
+26 verbose headers   date: 'Sat, 28 May 2016 11:02:13 GMT',
+26 verbose headers   via: '1.1 varnish',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'x-served-by': 'cache-lhr6331-LHR',
+26 verbose headers   'x-cache': 'MISS',
+26 verbose headers   'x-cache-hits': '0',
+26 verbose headers   'x-timer': 'S1464433333.495514,VS0,VE374',
+26 verbose headers   vary: 'Accept-Encoding' }
+27 silly get cb [ 304,
+27 silly get   { 'cache-control': 'max-age=300',
+27 silly get     'accept-ranges': 'bytes',
+27 silly get     date: 'Sat, 28 May 2016 11:02:13 GMT',
+27 silly get     via: '1.1 varnish',
+27 silly get     connection: 'keep-alive',
+27 silly get     'x-served-by': 'cache-lhr6331-LHR',
+27 silly get     'x-cache': 'MISS',
+27 silly get     'x-cache-hits': '0',
+27 silly get     'x-timer': 'S1464433333.495514,VS0,VE374',
+27 silly get     vary: 'Accept-Encoding' } ]
+28 verbose etag https://registry.npmjs.org/electron-packager from cache
+29 verbose get saving electron-packager to /Users/patrickkillalea/.npm/registry.npmjs.org/electron-packager/.cache.json
+30 verbose correctMkdir /Users/patrickkillalea/.npm correctMkdir not in flight; initializing
+31 silly addNameTag next cb for electron-packager with tag latest
+32 silly addNamed electron-packager@7.0.2
+33 verbose addNamed "7.0.2" is a plain semver version for electron-packager
+34 silly cache afterAdd electron-packager@7.0.2
+35 verbose afterAdd /Users/patrickkillalea/.npm/electron-packager/7.0.2/package/package.json not in flight; writing
+36 verbose correctMkdir /Users/patrickkillalea/.npm correctMkdir not in flight; initializing
+37 verbose afterAdd /Users/patrickkillalea/.npm/electron-packager/7.0.2/package/package.json written
+38 silly install resolved [ { name: 'electron-packager',
+38 silly install resolved     version: '7.0.2',
+38 silly install resolved     description: 'Package and distribute your Electron app with OS-specific bundles (.app, .exe etc) via JS or CLI',
+38 silly install resolved     main: 'index.js',
+38 silly install resolved     bin: { 'electron-packager': 'cli.js' },
+38 silly install resolved     repository:
+38 silly install resolved      { type: 'git',
+38 silly install resolved        url: 'git+https://github.com/electron-userland/electron-packager.git' },
+38 silly install resolved     author: { name: 'max ogden' },
+38 silly install resolved     license: 'BSD-2-Clause',
+38 silly install resolved     bugs: { url: 'https://github.com/electron-userland/electron-packager/issues' },
+38 silly install resolved     homepage: 'https://github.com/electron-userland/electron-packager',
+38 silly install resolved     dependencies:
+38 silly install resolved      { asar: '^0.11.0',
+38 silly install resolved        'electron-download': '^2.0.0',
+38 silly install resolved        'electron-osx-sign': '^0.3.0',
+38 silly install resolved        'extract-zip': '^1.0.3',
+38 silly install resolved        'fs-extra': '^0.28.0',
+38 silly install resolved        'get-package-info': '0.0.2',
+38 silly install resolved        minimist: '^1.1.1',
+38 silly install resolved        plist: '^1.1.0',
+38 silly install resolved        rcedit: '^0.5.0',
+38 silly install resolved        resolve: '^1.1.6',
+38 silly install resolved        'run-series': '^1.1.1' },
+38 silly install resolved     devDependencies:
+38 silly install resolved      { 'buffer-equal': '^1.0.0',
+38 silly install resolved        coveralls: '^2.11.6',
+38 silly install resolved        'is-admin': '^1.0.2',
+38 silly install resolved        nyc: '^6.0.0',
+38 silly install resolved        rcinfo: '^0.1.3',
+38 silly install resolved        rimraf: '^2.3.2',
+38 silly install resolved        'run-waterfall': '^1.1.1',
+38 silly install resolved        standard: '^6.0.0',
+38 silly install resolved        tape: '^4.0.0' },
+38 silly install resolved     engines: { node: '>= 4.0' },
+38 silly install resolved     scripts:
+38 silly install resolved      { coveralls: 'nyc report --reporter=text-lcov | coveralls',
+38 silly install resolved        pretest: 'rimraf test/work',
+38 silly install resolved        test: 'standard && nyc --cache tape test' },
+38 silly install resolved     standard: { ignore: [Object] },
+38 silly install resolved     directories: { test: 'test' },
+38 silly install resolved     keywords: [],
+38 silly install resolved     gitHead: '0fced8511d5f6a9711218dafda8ea38ef0e0fd13',
+38 silly install resolved     _id: 'electron-packager@7.0.2',
+38 silly install resolved     _shasum: 'a55e883190d56d1d3f9bc48c9d15a4a1c8ee0500',
+38 silly install resolved     _from: 'electron-packager@latest',
+38 silly install resolved     _npmVersion: '3.8.6',
+38 silly install resolved     _nodeVersion: '5.11.1',
+38 silly install resolved     _npmUser:
+38 silly install resolved      { name: 'malept',
+38 silly install resolved        email: 'nodejs.npm.nospam@lazymalevolence.com' },
+38 silly install resolved     dist:
+38 silly install resolved      { shasum: 'a55e883190d56d1d3f9bc48c9d15a4a1c8ee0500',
+38 silly install resolved        tarball: 'https://registry.npmjs.org/electron-packager/-/electron-packager-7.0.2.tgz' },
+38 silly install resolved     maintainers:
+38 silly install resolved      [ [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object],
+38 silly install resolved        [Object] ],
+38 silly install resolved     _npmOperationalInternal:
+38 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+38 silly install resolved        tmp: 'tmp/electron-packager-7.0.2.tgz_1463588485231_0.2815284072421491' },
+38 silly install resolved     _resolved: 'https://registry.npmjs.org/electron-packager/-/electron-packager-7.0.2.tgz',
+38 silly install resolved     readme: 'ERROR: No README data found!' } ]
+39 info install electron-packager@7.0.2 into /usr/local/lib
+40 info installOne electron-packager@7.0.2
+41 verbose installOne of electron-packager to /usr/local/lib not in flight; installing
+42 verbose correctMkdir /Users/patrickkillalea/.npm/_locks correctMkdir not in flight; initializing
+43 verbose lock using /Users/patrickkillalea/.npm/_locks/electron-packager-3eb8cd2dd0168a6d.lock for /usr/local/lib/node_modules/electron-packager
+44 silly install write writing electron-packager 7.0.2 to /usr/local/lib/node_modules/electron-packager
+45 verbose unbuild lib/node_modules/electron-packager
+46 info preuninstall electron-packager@7.0.1
+47 info uninstall electron-packager@7.0.1
+48 verbose unbuild rmStuff electron-packager@7.0.1 from /usr/local/lib/node_modules
+49 silly gentlyRm /usr/local/bin/electron-packager is being gently removed
+50 silly gentlyRm verifying /usr/local is an npm working directory
+51 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+52 silly gentlyRm deletion target /usr/local/bin/electron-packager is under /usr/local
+53 verbose gentlyRm vacuuming from /usr/local/bin/electron-packager up to /usr/local
+54 info postuninstall electron-packager@7.0.1
+55 silly gentlyRm /usr/local/lib/node_modules/electron-packager is being purged from base /usr/local
+56 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/electron-packager
+57 silly vacuum-fs purging /usr/local/lib/node_modules/electron-packager
+58 verbose unlock done using /Users/patrickkillalea/.npm/_locks/electron-packager-3eb8cd2dd0168a6d.lock for /usr/local/lib/node_modules/electron-packager
+59 verbose stack Error: EACCES: permission denied, unlink '/usr/local/lib/node_modules/electron-packager/.editorconfig'
+59 verbose stack     at Error (native)
+60 verbose cwd /Users/patrickkillalea/Documents/GitHub/electron/GameNews
+61 error Darwin 14.5.0
+62 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "electron-packager" "-g"
+63 error node v4.4.4
+64 error npm  v2.15.1
+65 error path /usr/local/lib/node_modules/electron-packager/.editorconfig
+66 error code EACCES
+67 error errno -13
+68 error syscall unlink
+69 error Error: EACCES: permission denied, unlink '/usr/local/lib/node_modules/electron-packager/.editorconfig'
+69 error     at Error (native)
+69 error  { [Error: EACCES: permission denied, unlink '/usr/local/lib/node_modules/electron-packager/.editorconfig']
+69 error   errno: -13,
+69 error   code: 'EACCES',
+69 error   syscall: 'unlink',
+69 error   path: '/usr/local/lib/node_modules/electron-packager/.editorconfig' }
+70 error Please try running this command again as root/Administrator.
+71 verbose exit [ -13, true ]
+72 verbose unbuild lib/node_modules/electron-packager
+73 info preuninstall electron-packager@7.0.1
+74 info uninstall electron-packager@7.0.1
+75 verbose unbuild rmStuff electron-packager@7.0.1 from /usr/local/lib/node_modules
+76 silly gentlyRm /usr/local/bin/electron-packager is being gently removed
+77 silly gentlyRm verifying /usr/local is an npm working directory
+78 silly gentlyRm containing path /usr/local is under npm's control, in /usr/local
+79 silly gentlyRm deletion target /usr/local/bin/electron-packager is under /usr/local
+80 verbose gentlyRm vacuuming from /usr/local/bin/electron-packager up to /usr/local
+81 info postuninstall electron-packager@7.0.1
+82 silly gentlyRm /usr/local/lib/node_modules/electron-packager is being purged from base /usr/local
+83 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/electron-packager
+84 silly vacuum-fs purging /usr/local/lib/node_modules/electron-packager
+85 error error rolling back Error: EACCES: permission denied, unlink '/usr/local/lib/node_modules/electron-packager/.editorconfig'
+85 error error rolling back     at Error (native)
+85 error error rolling back  { [Error: EACCES: permission denied, unlink '/usr/local/lib/node_modules/electron-packager/.editorconfig']
+85 error error rolling back   errno: -13,
+85 error error rolling back   code: 'EACCES',
+85 error error rolling back   syscall: 'unlink',
+85 error error rolling back   path: '/usr/local/lib/node_modules/electron-packager/.editorconfig' }
