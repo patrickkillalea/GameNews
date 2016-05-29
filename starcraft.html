@@ -4,9 +4,10 @@
         <meta charset="UTF-8">
         <title>Hello World!</title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="style/searchbar.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div class="hidden-xs" style="background-color: rgba(60,60,60,0.5);height:80px;width:100%;box-shadow: 2px 2px 1px rgb(128,128,128);">
+        <div style="background-color: rgba(60,60,60,0.5);height:80px;width:100%;box-shadow: 2px 2px 1px rgb(128,128,128);">
             <div style="display:inline; padding-left:40px;"><img src="http://findicons.com/files/icons/770/token_dark/256/games.png" height="80px" width="80px" /></div>
             <div style="display:inline">
                 <a href="#"><h3 style="color:white;display:inline;margin-left:30px;">Link 1</h3></a>
@@ -14,9 +15,18 @@
                 <a href="#"><h3 style="color:white;display:inline;margin-left:30px;">Link 3</h3></a>
                 <a href="#"><h3 style="color:white;display:inline;margin-left:30px;">Link 4</h3></a>
             </div>
+            <div align="right" style="display:inline; ">
+                <form action="" class="search-form" style="display:inline; ">
+                    <div class="form-group has-feedback">
+                        <label for="search" class="sr-only">Search</label>
+                        <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                </form>
+            </div>
         </div>
         <div class="col-md-2 col-sm-2 col-xs-2" style="padding-left:0px;">
-            <div style="color:white; background-color: rgba(0,0,0,0.6); height:400px;width:140px;" align="center">
+            <div style="color:white; background-color: rgba(0,0,0,0.6); height:498px;width:140px;" align="center">
                 <a href="dota.html"><div><img style="margin-top: 10px; margin-bottom: 10px;" src="images/dotalogo.png" height="60px" width="60px"/></div></a>
                 <a href="index.html"><div><img style="margin-top: 10px; margin-bottom: 10px;" src="images/wowlogo.png" height="60px" width="120px"/></div></a>
                 <a href="cs.html"><div><img style="margin-top: 10px; margin-bottom: 10px;" src="images/cslogo.jpg" height="60px" width="120px"/></div></a>
